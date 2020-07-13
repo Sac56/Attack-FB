@@ -32,7 +32,7 @@ def Ssi():
 	print('{2}~~~~~>>  Insert Wordlist')
 	print('{3}~~~~~>>  Contacts Us')
 	print('{0}~~~~~>>  Exit')
-	slop = input('Select option:- ')
+	slop = raw_input('Select option:- ')
 	if slop =="":
 		print('[!] Invalid Input')
 		os.system('clear')
@@ -56,7 +56,7 @@ def Ssi():
 			print('{3}~~~~~>>  Youtube Channel')
 			print('{0}~~~~~>>  Back')
 			def choice():
-				gt = input('Select option:- ')
+				gt = raw_input('Select option:- ')
 				if gt =="":
 					print('[!] Invalid Input')
 					time.sleep(1)
@@ -83,5 +83,9 @@ def Ssi():
 					os.system('clear')
 					contact()  
                                         
-			contact()
+                        contact()
+        else:
+                print('[!] Invalid Input')
+                time.sleep(1)
+                Ssi()
 Ssi()		
