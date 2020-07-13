@@ -83,7 +83,7 @@ def Ssi():
 					os.system('clear')
 					contact()  
                                         
-                        contact()
+                 contact()
         else:
                 print('[!] Invalid Input')
                 time.sleep(1)
